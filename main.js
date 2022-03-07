@@ -1,8 +1,32 @@
 // Your code here.
 
+function getFirstName(obj){
+  return obj.firstName;
+}
 
+function getLastName(obj){
+  return obj.lastName;
+}
 
+function getFullName(obj){
+  return obj.fullName; 
+}
 
+function setFirstName(person, newFirstName){
+  return person.firstName = newFirstName;
+}
+
+function setAge (person, age){
+  return person.firstName = age;
+}
+
+function marry(person1, person2){
+  person1.married = true;
+  person2.married = true;
+
+  person1.spouseName = getFullName(person2);
+  person2.spouseName = getFullName(person1);
+}
 
 // Our code here. Don't touch!
 if (typeof getFirstName === 'undefined') {
