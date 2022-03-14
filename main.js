@@ -17,7 +17,7 @@ function setFirstName(person, newFirstName){
 }
 
 function setAge (person, age){
-  return person.firstName = age;
+  return person.fullName = age;
 }
 
 function marry(person1, person2){
@@ -26,6 +26,10 @@ function marry(person1, person2){
 
   person1.spouseName = getFullName(person2);
   person2.spouseName = getFullName(person1);
+}
+
+function divorce(person1, person2){
+  
 }
 
 // Our code here. Don't touch!
